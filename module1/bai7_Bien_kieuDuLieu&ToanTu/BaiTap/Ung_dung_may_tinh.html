@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <input type="text" id="1" >
+    <input type="text" id="2"><br>
+    <input type="button" value="addition(+)" onclick="cong()">
+    <input type="button" value="subtraction(-)" onclick="tru()">
+    <input type="button" value="multiplication(X)" onclick="nhan()">
+    <input type="button" value="division(/)" onclick="chia()">
+    <p id="result"></p>
+</form>
+<script>
+    function cong() {
+        let number1=document.getElementById("1").value ;
+        let number2=document.getElementById("2").value;
+        number1=parseInt(number1);
+        number2=parseInt(number2);
+        let ketQua=0;
+        ketQua=number1+number2;
+        document.getElementById("result").innerHTML = "Result Division "+ ketQua;
+    }
+    function tru() {
+        let number1=document.getElementById("1").value ;
+        let number2=document.getElementById("2").value;
+        number1=parseInt(number1);
+        number2=parseInt(number2);
+        let ketQua=0;
+        ketQua=number1-number2;
+        document.getElementById("result").innerHTML = "Result Division "+ ketQua;
+    }
+    function nhan() {
+        let number1=document.getElementById("1").value ;
+        let number2=document.getElementById("2").value;
+        number1=parseInt(number1);
+        number2=parseInt(number2);
+        let ketQua=0;
+        ketQua=number1*number2;
+        document.getElementById("result").innerHTML = "Result Division "+ ketQua;
+    }
+    function chia() {
+        let number1=document.getElementById("1").value ;
+        let number2=document.getElementById("2").value;
+        number1=parseInt(number1);
+        number2=parseInt(number2);
+        let ketQua=0;
+        ketQua=number1/number2;
+        document.getElementById("result").innerHTML = "Result Division "+ ketQua;
+    }
+</script>
+</body>
+</html>

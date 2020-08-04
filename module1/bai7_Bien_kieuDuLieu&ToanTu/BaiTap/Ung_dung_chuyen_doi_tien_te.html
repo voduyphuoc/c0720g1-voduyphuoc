@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <p>Amount</p>
+    <input type="text" id="money"><br>
+    <p>From Currency:</p><br>
+    <select id="tienGoc">
+        <option value="VND" selected>VietNam</option>
+        <option value="USD">USD</option>
+    </select><br>
+    <p>To currency:</p><br>
+    <select id="tienDoi">
+        <option value="VND">VietNam</option>
+        <option value="USD">USD</option>
+    </select><br>
+    <input type="button" value="Convert" onclick="doiTien()">
+    <p id="result"></p>
+</form>
+<script>
+    function doiTien() {
+        let money = document.getElementById("money").value;
+        let tienDoi=document.getElementById("tienDoi").value;
+        let tienGoc=document.getElementById("tienGoc").value;
+        let ketQua=0;
+        if (tienGoc=="VND"&&tienDoi=="USD"){
+           ketQua=money/23000;
+        }else if (tienGoc="USD"&&tienDoi=="VND"){
+           ketQua=money*23000;
+        }else {
+            ketQua="nhập lại";
+        }
+        document.getElementById("result").innerHTML="result ="+ ketQua;
+    }
+</script>
+</body>
+</html>
