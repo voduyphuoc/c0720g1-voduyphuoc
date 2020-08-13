@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let f1 = 0;
+    let f2 = 1;
+    let f=0;
+    for (let i = 0; i < 20;i++){
+        f += f1;
+        f2 = f1 + f2;
+        f1 = f2 - f1;
+    }
+    document.write("Tổng 20 số fibonacci ="+ f );
+</script>
+</body>
+</html>

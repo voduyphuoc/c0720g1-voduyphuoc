@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let nhapSo=parseInt(prompt("nhập số phút đã gọi điện thoại"));
+    if (nhapSo<=5){
+        Tien=nhapSo*200;
+        document.write("tiền cước điện thoại phải trả =" + Tien + "VND");
+    }else if (nhapSo>5&&nhapSo<=10){
+        Tien=5*200+(nhapSo-5)*300;
+        document.write("tiền cước điện thoại phải trả =" + Tien + "VND");
+    }else {
+        Tien=5*200+5*300+(nhapSo-10)*500;
+        document.write("tiền cước điện thoại phải trả =" + Tien + "VND");
+    }
+</script>
+</body>
+</html>

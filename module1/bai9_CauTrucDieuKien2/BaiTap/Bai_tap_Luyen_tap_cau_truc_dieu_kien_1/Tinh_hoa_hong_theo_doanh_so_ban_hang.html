@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let soTien=parseInt(prompt("nhập doanh số bán hàng"));
+    if (soTien>=20000000){
+        hoaHong=soTien*0.2;
+        document.write("số tiền hoa hồng nhận được =" +hoaHong +" VND ");
+    }else if (soTien<20000000&&soTien>=10000000){
+        hoaHong=soTien*0.15;
+        document.write("số tiền hoa hồng nhận được =" +hoaHong +" VND ");
+    }else if (soTien<10000000&&soTien>=5000000){
+        hoaHong=soTien*0.1;
+        document.write("số tiền hoa hồng nhận được =" +hoaHong+ " VND ");
+    }else {
+        hoaHong=soTien*0.05;
+        document.write("số tiền hoa hồng nhận được =" +hoaHong+ "VND");
+    }
+</script>
+</body>
+</html>

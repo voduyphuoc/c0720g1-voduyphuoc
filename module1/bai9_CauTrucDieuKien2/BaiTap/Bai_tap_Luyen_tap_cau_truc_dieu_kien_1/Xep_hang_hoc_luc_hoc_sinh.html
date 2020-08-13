@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let diemKiemTra1=parseInt(prompt("điểm bài kiểm tra thứ nhất"));
+    let diemKiemTra2=parseInt(prompt("điểm bài kiểm tra thứ hai"));
+    let diemThiGiuaKy=parseInt(prompt("điểm bài thi giữa kỳ"));
+    let diemThiCuoiKy=parseInt(prompt("điểm bài thi cuối kỳ"));
+    ketQua=(diemKiemTra1+diemKiemTra2+diemThiGiuaKy*2+diemThiCuoiKy*3)/7;
+    if (ketQua>=8){
+        document.write("học sinh giỏi");
+    }else if (ketQua>=6.5&&ketQua<8){
+        document.write("học sinh khá");
+    }else if (5<=ketQua&&ketQua<6.5){
+        document.write("học sinh trung bình");
+    }else if(ketQua>=3.5&&ketQua<5){
+        document.write("học sinh yếu");
+    }else {
+        document.write("học sinh kém");
+    }
+</script>
+</body>
+</html>

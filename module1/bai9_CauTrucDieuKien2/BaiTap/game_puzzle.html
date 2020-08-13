@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>gamepuzle</title>
+</head>
+<body>
+    <img id="hinh1" src="funny-cat1_part1x1.jpg" onclick="doiHinh('hinh1')">
+    <img id="hinh2" src="funny-cat1_part2x1.jpg" onclick="doiHinh('hinh2')">
+    <img id="hinh3" src="funny-cat1_part3x1.jpg" onclick="doiHinh('hinh3')">
+    <img id="hinh4" src="funny-cat1_part4x1.jpg" onclick="doiHinh('hinh4')">
+    <img id="hinh5" src="funny-cat1_part5x1.jpg" onclick="doiHinh('hinh5')">
+<script>
+    function doiHinh(hinh) {
+        let objHinh1=document.getElementById("hinh1");
+        let objHinh2=document.getElementById("hinh2");
+        let objHinh3=document.getElementById("hinh3");
+        let objHinh4=document.getElementById("hinh4");
+        let objHinh5=document.getElementById("hinh5");
+        switch (hinh) {
+            case "hinh1":
+                if (objHinh1.getAttribute("src")==="funny-cat1_part1x1.jpg"){
+                    objHinh1.src="monkey_part1x1.jpg";
+                }else if (objHinh1.getAttribute("src")==="monkey_part1x1.jpg"){
+                    objHinh1.src="panda_swap_part1x1.jpg";
+                }else {
+                    objHinh1.src="funny-cat1_part1x1.jpg";
+                }
+                setTimeout(kiemTra,1000);
+                break;
+            case "hinh2":
+                if (objHinh2.getAttribute("src")==="funny-cat1_part2x1.jpg"){
+                    objHinh2.src="monkey_part2x1.jpg";
+                }else if (objHinh2.getAttribute("src")==="monkey_part2x1.jpg"){
+                    objHinh2.src="panda_swap_part2x1.jpg";
+                }else {
+                    objHinh2.src="funny-cat1_part2x1.jpg";
+                }
+                setTimeout(kiemTra,1000);
+                break;
+            case "hinh3":
+                if (objHinh3.getAttribute("src")==="funny-cat1_part3x1.jpg"){
+                    objHinh3.src="monkey_part3x1.jpg";
+                }else if (objHinh3.getAttribute("src")==="monkey_part3x1.jpg"){
+                    objHinh3.src="panda_swap_part3x1.jpg";
+                }else {
+                    objHinh3.src="funny-cat1_part3x1.jpg";
+                }
+                setTimeout(kiemTra,1000);
+                break;
+            case "hinh4":
+                if (objHinh4.getAttribute("src")==="funny-cat1_part4x1.jpg"){
+                    objHinh4.src="monkey_part4x1.jpg";
+                }else if (objHinh1.getAttribute("src")==="monkey_part4x1.jpg"){
+                    objHinh1.src="panda_swap_part4x1.jpg";
+                }else {
+                    objHinh4.src="funny-cat1_part4x1.jpg";
+                }
+                setTimeout(kiemTra,1000);
+                break;
+            case "hinh5":
+                if (objHinh5.getAttribute("src")==="funny-cat1_part5x1.jpg"){
+                    objHinh5.src="monkey_part5x1.jpg";
+                }else if (objHinh5.getAttribute("src")==="monkey_part5x1.jpg"){
+                    objHinh5.src="panda_swap_part5x1.jpg";
+                }else {
+                    objHinh5.src="funny-cat1_part5x1.jpg";
+                }
+                setTimeout(kiemTra,1000);
+                break;
+        }
+    }
+    function kiemTra() {
+        let objHinh1=document.getElementById("hinh1");
+        let objHinh2=document.getElementById("hinh2");
+        let objHinh3=document.getElementById("hinh3");
+        let objHinh4=document.getElementById("hinh4");
+        let objHinh5=document.getElementById("hinh5");
+        let kiemTraCat= objHinh1.getAttribute("src")==="funny-cat1_part1x1.jpg"&&objHinh2.getAttribute("src")==="funny-cat1_part2x1.jpg"&&objHinh3.getAttribute("src")==="funny-cat1_part3x1.jpg"&&objHinh4.getAttribute("src")==="funny-cat1_part4x1.jpg"&&objHinh5.getAttribute("src")==="funny-cat1_part5x1.jpg";
+        let kiemTraMonkey= objHinh1.getAttribute("src")==="monkey_part1x1.jpg"&&objHinh2.getAttribute("src")==="monkey_part2x1.jpg"&&objHinh3.getAttribute("src")==="monkey_part3x1.jpg"&&objHinh4.getAttribute("src")==="monkey_part4x1.jpg"&&objHinh5.getAttribute("src")==="monkey_part5x1.jpg";
+        let kiemTraPanda= objHinh1.getAttribute("src")==="panda_swap_part1x1.jpg"&&objHinh2.getAttribute("src")==="panda_swap_part2x1.jpg"&&objHinh3.getAttribute("src")==="panda_swap_part3x1.jpg"&&objHinh4.getAttribute("src")==="panda_swap_part4x1.jpg"&&objHinh5.getAttribute("src")==="panda_swap_part5x1.jpg";
+        if (kiemTraCat){
+            alert("Cat.");
+        }else if (kiemTraMonkey){
+            alert("Monkey.");
+        }else if (kiemTraPanda){
+            alert("Panda.");
+        }
+    }
+
+</script>
+</body>
+</html>

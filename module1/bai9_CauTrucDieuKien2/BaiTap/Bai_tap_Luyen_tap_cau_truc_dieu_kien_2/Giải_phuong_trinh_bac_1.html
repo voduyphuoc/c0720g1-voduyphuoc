@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a=parseInt(prompt("nhập số a trong ax+b=0"));
+    let b=parseInt(prompt("nhập số b trong ax+b=0"));
+    if (a==0&&b==0){
+        document.write("phương trình có vô số nghiệm");
+    }else if (a==0&&b!=0){
+        document.write("phương trình vô nghiệm");
+    }else {
+        x=-b/a;
+        document.write("phương có 1 nghiệm x = " + x);
+    }
+</script>
+</body>
+</html>

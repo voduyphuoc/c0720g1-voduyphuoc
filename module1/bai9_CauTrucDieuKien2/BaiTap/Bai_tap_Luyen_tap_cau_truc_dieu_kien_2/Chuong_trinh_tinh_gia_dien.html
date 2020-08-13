@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let dien= parseInt(prompt("Nhập số điện đã sử dụng"));
+    if (dien<=50){
+        tien= dien*230;
+        alert("Số tiền phải trả ="+ tien +"vnd")
+    }else if (50<dien&&dien<=100){
+        tien1=50*230;
+        tien2=(dien-50)*480;
+        tien= tien1+tien2;
+        alert("Số tiền phải trả =" + tien + "vnd")
+    }else  {
+        tien1 = 50 * 230;
+        tien2 = (100 - 50) * 480;
+        tien3 = (dien - 100) * 700;
+        tien = tien1 + tien2 + tien3;
+        alert("Số tiền phải trả =" + tien + "vnd");
+    }
+
+</script>
+</body>
+</html>

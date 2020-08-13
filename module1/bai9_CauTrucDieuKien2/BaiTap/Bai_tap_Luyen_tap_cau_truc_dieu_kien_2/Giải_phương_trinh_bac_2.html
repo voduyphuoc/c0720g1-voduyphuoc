@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a=parseInt(prompt("nhập số a trong ax^2+bx+c=0"));
+    let b=parseInt(prompt("nhập số b trong ax^2+bx+c=0"));
+    let c=parseInt(prompt("nhập số c trong ax^2+bx+c=0"));
+    delta=b*b-4*a*c;
+    if (delta<0){
+        document.write("phương trình vô nghiệm");
+    }else if (delta>0){
+        x1=(-b-Math.sqrt(delta))/(2*a);
+        x2=(-b+Math.sqrt(delta))/(2*a);
+        document.write("phương trinh có nghiệm thứ nhất là x1="+ x1 + " và " + "phương trình có nghiệm thứ hai x2=" + x2);
+    }else {
+        x=(-b)/(2*a);
+        document.write("phương trình có nghiệm kép x= x1 = x2 ="+ x);
+    }
+</script>
+</body>
+</html>

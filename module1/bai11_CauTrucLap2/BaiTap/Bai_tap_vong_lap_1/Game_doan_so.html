@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <input type="button" value="chơi" onclick="chơi()" id="1" >
+</form>
+<script>
+    function chơi() {
+        let number = parseInt(prompt("Nhập Khoảng số muốn đoán"));
+        let random = Math.floor(Math.random()*number);
+        let soDoan = parseInt(prompt("Nhập vào số muốn đoán"));
+        for (let i = 0;i < 3; i++){
+            if (random===soDoan){
+                alert("chúc mừng chiến thắng");
+            }else {
+                let soDoan=parseInt(prompt("sai, mời nhập số đoán lại"));
+            }
+        }
+    }
+</script>
+</body>
+</html>

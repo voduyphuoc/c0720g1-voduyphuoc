@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Máy tính đơn giản</title>
+</head>
+<body>
+<fieldset style="width: 250px" >
+    <input type="text" id="mayTinh" name="mayTinh" value="" style="width: 245px;height: 25px" ><br>
+    <input type="button" value="1" onclick="enter(value)" style="width: 60px;height: 25px">
+    <input type="button" value="2" onclick="enter(value)" style="width: 60px;height: 25px">
+    <input type="button" value="3" onclick="enter(value)" style="width: 60px;height: 25px">
+    <input type="button" value="+" onclick="enter(value)" style="width: 60px;height: 25px"><br>
+    <input type="button" value="4" onclick="enter(value)" style="width: 60px;height: 25px">
+    <input type="button" value="5" onclick="enter(value)" style="width: 60px;height: 25px">
+    <input type="button" value="6" onclick="enter(value)" style="width: 60px;height: 25px">
+    <input type="button" value="-" onclick="enter(value)" style="width: 60px;height: 25px"><br>
+    <input type="button" value="7" onclick="enter(value)" style="width: 60px;height: 25px">
+    <input type="button" value="8" onclick="enter(value)" style="width: 60px;height: 25px">
+    <input type="button" value="9" onclick="enter(value)" style="width: 60px;height: 25px">
+    <input type="button" value="*" onclick="enter(value)" style="width: 60px;height: 25px"><br>
+    <input type="reset" value="C" onclick="enter(value )" style="width: 60px;height: 25px">
+    <input type="button" value="0" onclick="enter(value)" style="width: 60px;height: 25px">
+    <input type="button" value="=" onclick="tinh()" style="width: 60px;height: 25px">
+    <input type="button" value="/" onclick="enter(value)" style="width: 60px;height: 25px">
+</fieldset>
+<script>  function enter(nhapSo) {
+    if (nhapSo == "C") {
+        document.getElementById("mayTinh").value = "";
+    } else {
+        document.getElementById("mayTinh").value += nhapSo;
+    }
+}
+    function tinh() {
+        let string = document.getElementById("mayTinh").value;
+        ketQua = eval(string);
+        document.getElementById("mayTinh").value = ketQua;
+    }
+
+</script>
+</body>
+</html>
