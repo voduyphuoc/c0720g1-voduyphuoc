@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array1 = new Array(10);
+    let array2 = new Array(10);
+    for ( let i = 0; i < array1.length ; i++){
+        array1[i] = parseInt(prompt("nhập phần tử mảng 1"));
+    }
+    alert("giá trị mảng 1 là " + array1 );
+    for ( let i = 0; i < array2.length; i++){
+        array2[i] = parseInt(prompt("nhập phần tử mảng 2"));
+    }
+    alert("giá trị mảng 2 là " + array2);
+    array = array1.concat(array2);
+    alert(array);
+</script>
+</body>
+</html>

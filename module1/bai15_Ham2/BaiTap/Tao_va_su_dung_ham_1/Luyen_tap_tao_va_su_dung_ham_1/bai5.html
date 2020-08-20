@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="addStar(prompt('nhập tên ngôi sao'))">
+<script>
+    let array = ["Polaris" , "Aldebaran" , "Deneb" , "Vega" , "Altair" , "Dubhe" , "Regulus"];
+    let array2= ["Ursa Minor" , "Tarurus" , "Cygnus" , "Lyra" , "Aquila" , "Ursa Major" , "leo"];
+    function addStar(star) {
+        for ( let i = 0; i < array.length; i++){
+            if (star === array[i]){
+                alert(array2[i]);
+                break;
+            }
+            if (star === array.length-1){
+                alert("không tìm thấy");
+            }
+        }
+    }
+</script>
+</body>
+</html>

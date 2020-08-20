@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let arr = [];
+    // let arrLength = parseInt(prompt('nhập độ dài mảng: '));
+    // for (let i = 0; i < arrLength; i++) {
+    //     let num = prompt('nhập kí tự');
+    //     arr.push(num);
+    // }
+    // let count = 0;
+    // for (let item of arr) {
+    //     if (!isNaN(item)) count++
+    // }
+    // document.write(arr + '<br>');
+    // document.write('số kí tự số là ' + count);
+    let array = [1,'b',56,'c',78,69,true,22,false,77];
+    let count = 0;
+    for ( let i = 0; i < array.length ; i++){
+        if (typeof (array[i])==='number'){
+            count++;
+        }
+    }
+    document.write("Array = [1,'b',56,'c',78,69,true,22,false,77]" + "<br>");
+    document.write("số lượng kí tự số là " + count);
+</script>
+</body>
+</html>

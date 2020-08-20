@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array=[];
+    for (let i = 0; i < 4;i++){
+        number = parseInt(prompt("nhập số"));
+        array.push(number);
+    }
+    let max = 0;
+    let avegare = 0;
+    for (let i = 0;i < array.length;i++){
+        if (array[i]> max){
+            max = array[i];
+            avegare += array[i];
+        }
+    }
+    avegare = avegare/array.length;
+    alert("số nguyên lớn nhất là " + max + " trung bình cộng là " + avegare );
+</script>
+</body>
+</html>

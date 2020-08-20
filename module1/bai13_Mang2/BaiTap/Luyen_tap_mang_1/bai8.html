@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array = new Array(3);
+    for (let i = 0;i < array.length;i++){
+        array[i] = parseInt(prompt("nhập số nguyên"));
+    }
+    alert("giá trị của mảng " + array);
+    array.sort(function (a,b) {
+        return a-b;
+    }
+    )
+    alert("giá trị của mảng sau khi sắp xếp lại từ nhỏ tới lớn là " + array);
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function checkBelong(arr, str) {
+        let count = 0;
+        for (let item of arr) {
+            if (item === str) count++;
+        }
+        if (count === 0) count = -1;
+        return count;
+    }
+    let result = checkBelong([1, 2, 3, 4, 5], 7);
+    document.write(result);
+</script>
+</body>
+</html>

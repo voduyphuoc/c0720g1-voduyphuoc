@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array= new Array(3);
+    for (let i = 0; i < array.length ;i++){
+       array[i] = parseInt(prompt("nhập phần tử"));
+    }
+    alert(array);
+    let number = parseInt(prompt("nhập phần tử muốn loại bỏ khỏi mảng"));
+    for (let j = 0; j < array.length;j++){
+       if (number===array[j]){
+           array.splice(j,1);
+           array.push(0);
+       }
+    }
+   alert(array);
+</script>
+</body>
+</html>
